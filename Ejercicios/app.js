@@ -1,8 +1,8 @@
 // crea una funcion declararVariable (no es necesario llamarla)
 function declararVariable() {
-
+    let x = 10;
+    return x;
 }
-
 
 /* 
 crea una funcion de cada operacion matematica (no es necesario llamarlas)
@@ -11,83 +11,83 @@ restar
 multiplicar
 dividir
 y retorne su valor
- */
-function sumar() {
-
+*/
+function sumar(a, b) {
+    return a + b;
 }
 
-function restar() {
-
+function restar(a, b) {
+    return a - b;
 }
 
-function multiplicar() {
-
+function multiplicar(a, b) {
+    return a * b;
 }
 
-function dividir() {
-
+function dividir(a, b) {
+    if (b === 0) {
+        return "Error: División por cero";
+    }
+    return a / b;
 }
-
-
 
 /* 
 crea 2 funciones
 concatenar
 longitudCadena
 */
-function concatenar() {
- 
+function concatenar(a, b) {
+    return a + " " + b;
 }
 
-function longitudCadena() {
-
+function longitudCadena(cadena) {
+    return cadena.length;
 }
-
 
 /* 
 crea 2 funciones 
 esPar
 esMayorQueCero
 */
-
-function esPar() {
-
+function esPar(numero) {
+    return numero % 2 === 0;
 }
 
-function esMayorQueCero() {
-
+function esMayorQueCero(numero) {
+    if (numero > 0) return "Positivo";
+    if (numero < 0) return "Negativo";
+    return "Cero";
 }
-
 
 // funciones de comparacion
-function compararIgualdadEstricta() {
-    return;  
+function compararIgualdadEstricta(a, b) {
+    return a === b;
 }
 
-function compararDesigualdadEstricta() {
-    return; 
+function compararDesigualdadEstricta(a, b) {
+    return a !== b;
 }
 
-function compararMayorQue() {
-    return;  
+
+function compararMayorQue(a, b) {
+    return a > b;
 }
 
-function compararMenorQue() {
-    return;  
+function compararMenorQue(a, b) {
+    return a < b;
 }
 
-function compararMayorOIgualQue() {
-    return;  
+function compararMayorOIgualQue(a, b) {
+    return a >= b;
 }
 
-function compararMenorOIgualQue() {
-    return; 
+function compararMenorOIgualQue(a, b) {
+    return a <= b;
 }
 
 function compararNullUndefined() {
-    return;  
+    return null == undefined;
 }
-
 
 // no tocar el codigo siguiente 
 module.exports = {

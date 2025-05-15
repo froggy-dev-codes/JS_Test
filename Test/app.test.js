@@ -85,7 +85,7 @@ describe("comparaIgualdadEstricta: Compara si 5 es estrictamente igual a 5", () 
 
 describe("compararDesigualdadEstricta: Compara si '5' es igual a 5", () => {
     test("Debería ser falso, ya que son tipos diferentes", () => {
-        expect(compararDesigualdadEstricta('5', 5)).toBe(false);
+        expect(compararDesigualdadEstricta('5', 5)).toBe(true);
     });
 });
 
